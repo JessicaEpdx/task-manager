@@ -9,10 +9,19 @@ $(".task-form").submit(function(event){
 	$(".task-list").append("<li class='task'>" + newTask.name + "</li>");
 	
 	$(".task").last().click(function(){
+		$(this).toggleClass('selected');
+		
 		$(".task-info").show();
 		
 		$(".name").text(newTask.name);
 		$(".description").text(newTask.description);
+		
+		$(".remove-task").click(function(){
+			$('.done-task-list').append($('.task-list .selected').removeClass('selected'));
+			$(".task-info").hide();
+
+			
+		});
 		
 	});
 	

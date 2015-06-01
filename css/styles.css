@@ -46,3 +46,7 @@ label{
 	display:none;
 	list-style:none;
 }
+
+.selected{
+	color:red;
+}
