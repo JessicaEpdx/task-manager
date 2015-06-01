@@ -47,6 +47,23 @@ label{
 	list-style:none;
 }
 
+
 .selected{
+	color:blue;
+}
+
+.done-task-list{
+	text-decoration:line-through;
+	font-size:25px;
+	list-style:none;
+}
+
+.task:hover{
 	color:red;
+	cursor:pointer;
+}
+
+.done-task:hover{
+	color:black;
+	cursor:default;
 }
