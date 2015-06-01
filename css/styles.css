@@ -1,0 +1,29 @@
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+h1{
+	text-align:center;
+	color:teal;
+	margin-bottom:30px;
+	font-size:70px;
+
+}
+
+label{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.btn-default{
+	background-color:#66b9aa;
+	color:white;
+
+}
+
+.btn-default:hover{
+	background-color:teal;
+	color:white;
+}
