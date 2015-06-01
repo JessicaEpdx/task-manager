@@ -16,14 +16,17 @@
   <body>
 	  
 	  <h1>Task.Manager</h1>
+	  <h4>Add tasks to your list. Click on task when it is finished to add it to your done list.</h4>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 <!-- 				FORM GOES HERE -->
 				<form class="task-form">
 					<div class="form-group">
-						<label for="new-task">Description of Task</label>
-						<input type="text" class="new-task">
+						<label for="new-name">Name of Task</label>
+						<input type="text" class="new-name">
+						<label for="new-description">Description of Task</label>
+						<input type="text" class="new-description">
 						
 					</div>
 					
@@ -33,13 +36,21 @@
 			
 			
 			
-			<div class="col-sm-3">
+			<div class="col-sm-6">
+				<p class="column-header">Task List<p>
 				<ul class="task-list">
+				</ul>
+				
+				<ul class="task-info">
+					<h3>Name:</h3><li class="name"></li>
+					<h3>Description:</h3><li class="description"></li>
+					<span class="btn btn-default remove-task">Task Complete!</span>
 				</ul>
 			</div>
 			
 			
-			<div class="col-sm-6">
+			<div class="col-sm-3">
+				<p class="column-header">Finished Tasks</p>
 				<ul class="done-task-list">
 				</ul>
 			</div>

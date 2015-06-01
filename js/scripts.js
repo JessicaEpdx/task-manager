@@ -1,12 +1,23 @@
 $(".task-form").submit(function(event){
 	event.preventDefault();
 	
-	var newTask = $(".new-task").val()
+	var inputtedName = $(".new-name").val();
+	var inputtedDescription = $(".new-description").val();
 	
-	$(".task-list").append("<li>" + newTask + "</li>")
+	var newTask = { name: inputtedName, description: inputtedDescription}
 	
+	$(".task-list").append("<li class='task'>" + newTask.name + "</li>");
 	
+	$(".task").last().click(function(){
+		$(".task-info").show();
+		
+		$(".name").text(newTask.name);
+		$(".description").text(newTask.description);
+		
+	});
 	
-	$(".new-task").val("")
+	$(".new-name").val("")
+	$(".new-description").val("")
+
 });
 
