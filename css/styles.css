@@ -1,6 +1,7 @@
 body{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
+	text-align:center;
 }
 
 .container{
@@ -8,15 +9,11 @@ body{
 }
 
 h1{
-	text-align:center;
 	color:teal;
 	font-size:70px;
 
 }
 
-h4{	
-	text-align:center;
-}
 
 label{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -39,6 +36,8 @@ label{
 	color:#632780;
 	font-size:25px;
 	list-style:none;
+	margin:0px;
+	padding:0px;
 }
 
 .column-header{
@@ -83,4 +82,8 @@ label{
 	background-color:teal;
 }
 
+h3{
+	margin:0px;
+	padding:0px;
+}
 
