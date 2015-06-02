@@ -4,15 +4,18 @@ $(".task-form").submit(function(event){
 	
 	var inputtedName = $(".new-name").val();
 	var inputtedDescription = $(".new-description").val();
-	
+	console.log(inputtedName);
 	var newTask = { taskName: inputtedName.replace(/[^a-zA-Z0-9]+/g, ' '), description: inputtedDescription}
 	
-	
-	$(".task-list").append("<li class='task'>" + 
+	if(inputtedName !== ""){
+			$(".task-list").append("<li class='task'>" + 
 								newTask.taskName +  
 							"</li>" + 
 							"<span class='btn btn-info see-info " + newTask.taskName + "'>DESCRIPTION" + 
 							"</span>");
+		
+	}
+
 	
 	
 	
