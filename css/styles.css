@@ -48,6 +48,7 @@ label{
 .task-info{
 	display:none;
 	list-style:none;
+	word-break: break-word;
 }
 
 
