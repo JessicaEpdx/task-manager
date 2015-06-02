@@ -15,24 +15,22 @@ $(".task-form").submit(function(event){
 						"</span>");
 						
 		$(".see-info").last().click(function(){				
-		$(".task-info").show();
+			$(".task-info").show();
+			
+			$(".name").text(newTask.taskName);
+			$(".description").text(newTask.description);
 		
-		$(".name").text(newTask.taskName);
-		$(".description").text(newTask.description);
-		
-	});
+		});
 
 	};
 	
 		
 	
-	$(".task").click(function(){
-		$(this).addClass('selected');
-		
+	$(".task").click(function(){		
 		var className = $(this).text();
 		$("."+className).remove();
 				
-		$('.done-task-list').append($('.selected').removeClass('selected task').addClass('done-task'));
+		$('.done-task-list').append($(this).removeClass('task').addClass('done-task'));
 		
 		$(".task-info").hide();
 		
