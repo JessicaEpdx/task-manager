@@ -72,4 +72,15 @@ label{
 	cursor:pointer;
 }
 
+.btn-info{
+	font-size:15px;
+	padding:5px;
+	background-color:#66b9aa;
+
+}
+
+.btn-info:hover{
+	background-color:teal;
+}
+
 
