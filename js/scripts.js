@@ -11,11 +11,11 @@ var submitForm = function() {
 
 			var taskAppendToList = function() {
 					if (inputtedName !== "") {
-						$(".task-list").append("<li class='task'>" + 
-													newTask.taskName + 
-												"</li>" + 
-												"<span class='btn btn-info see-info " + 
-												newTask.taskName.replace(/\s+/g, "-") + "'>DESCRIPTION" + 
+						$(".task-list").append("<li class='task'>" +
+													newTask.taskName +
+												"</li>" +
+												"<span class='btn btn-info see-info " +
+												newTask.taskName.replace(/\s+/g, "-") + "'>DESCRIPTION" +
 												"</span>");
 						$(".see-info").last().click(function() {
 							$(".task-info").show();
@@ -24,11 +24,11 @@ var submitForm = function() {
 						});
 					};
 				};
-				
-				
+
+
 			taskAppendToList();
-			
-			
+
+
 			var taskClick = function() {
 					$(".task").click(function() {
 						var className = $(this).text();
@@ -40,11 +40,11 @@ var submitForm = function() {
 						});
 					});
 				};
-				
-				
+
+
 			taskClick();
-			
-			
+
+
 			$(".new-name").val("")
 			$(".new-description").val("")
 		});
