@@ -10,7 +10,7 @@ Task Manager is a web app that allows you to add tasks, see descriptions, and se
 
 ### Setup ###
 
-Visit http://www.JessicaEngel.com/javascript_homework/tasks/ to see a working model of Task.Manager
+Visit http://www.JessicaEngel.com/taskmanager to see a working model of Task.Manager
 If you'd like it up on your computer just clone to your desktop and put on your own website server.
 
 ### Debugging ###
